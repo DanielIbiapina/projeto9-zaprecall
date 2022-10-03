@@ -10,37 +10,45 @@ export default function App() {
     const [corAmarelo, setCorAmarelo] = useState([])
     const [corVermelho, setCorVermelho] = useState([])
     const [tracado, setTracado] = useState('')
-    const numeroPergunta = [0,1,2,3,4,5,6,7]
+    const [contador, setContador] = useState([])
+    const numeroPergunta = [0, 1, 2, 3, 4, 5, 6, 7]
     let cor;
     
 
+
     function zap(index) {
-        if(respostaCarta.length > 0){
+        if (respostaCarta.length > 0) {
             const novoArray = [...corVerde, index]
             setCorVerde(novoArray)
             setTracado('line-through')
             setTransformarCarta([])
             setRespostaCarta([])
+            const novoContador = [...contador,0]
+            setContador(novoContador)
         }
     }
 
     function quase(index) {
-        if(respostaCarta.length > 0){
+        if (respostaCarta.length > 0) {
             const novoArray = [...corAmarelo, index]
             setCorAmarelo(novoArray)
             setTracado('line-through')
             setTransformarCarta([])
             setRespostaCarta([])
+            const novoContador = [...contador,0]
+            setContador(novoContador)
         }
     }
 
     function naolembrei(index) {
-        if(respostaCarta.length > 0){
+        if (respostaCarta.length > 0) {
             const novoArray = [...corVermelho, index]
             setCorVermelho(novoArray)
             setTracado('line-through')
             setTransformarCarta([])
             setRespostaCarta([])
+            const novoContador = [...contador,0]
+            setContador(novoContador)
         }
     }
 
@@ -53,28 +61,29 @@ export default function App() {
                     ZapRecall
                 </Titulo>
             </ContainerLogo>
-            <Flashcards 
-            numeroPergunta = {numeroPergunta}
-            transformarCarta={transformarCarta} 
-            setTransformarCarta={setTransformarCarta}
-            respostaCarta = {respostaCarta} 
-            setRespostaCarta ={setRespostaCarta}
-            corVerde = {corVerde}
-            setCorVerde = {setCorVerde}
-            corAmarelo = {corAmarelo}
-            setCorAmarelo = {setCorAmarelo}
-            corVermelho = {corVermelho}
-            setCorVermelho = {setCorVermelho}
-            tracado ={tracado}
-            setTracado={setTracado}
-            cor = {cor}
+            <Flashcards
+                numeroPergunta={numeroPergunta}
+                transformarCarta={transformarCarta}
+                setTransformarCarta={setTransformarCarta}
+                respostaCarta={respostaCarta}
+                setRespostaCarta={setRespostaCarta}
+                corVerde={corVerde}
+                setCorVerde={setCorVerde}
+                corAmarelo={corAmarelo}
+                setCorAmarelo={setCorAmarelo}
+                corVermelho={corVermelho}
+                setCorVermelho={setCorVermelho}
+                tracado={tracado}
+                setTracado={setTracado}
+                cor={cor}
             />
             <Footer>
                 <ContainerBotoes>
-                    <Botoes cor={vermelho} onClick={() => naolembrei(respostaCarta[0])}> Não lembrei</Botoes>
-                    <Botoes cor={amarelo} onClick={() => quase(respostaCarta[0])}> Quase não lembrei</Botoes>
-                    <Botoes  cor = {verde}  onClick={() => zap(respostaCarta[0])} > Zap!</Botoes>
+                    <Botoes data-identifier="forgot-btn" cor={vermelho} onClick={() => naolembrei(respostaCarta[0])}> Não lembrei</Botoes>
+                    <Botoes data-identifier="almost-forgot-btn" cor={amarelo} onClick={() => quase(respostaCarta[0])}> Quase não lembrei</Botoes>
+                    <Botoes data-identifier="zap-btn" cor={verde} onClick={() => zap(respostaCarta[0])} > Zap!</Botoes>
                 </ContainerBotoes>
+                <p>{contador.length}/4 CONCLUIDOS</p>
             </Footer>
         </Conteudo>
     );
@@ -104,7 +113,7 @@ const Logo = styled.img`
     width: 52px;
 `
 const Titulo = styled.div`
-    /*font-family: 'Righteous';*/
+    font-family: 'Righteous';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
@@ -128,6 +137,15 @@ const Footer = styled.div`
     font-size: 18px;
     color: #333333;
     padding: 10px;
+    p{
+        font-family: 'Recursive';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #333333;
+        margin-bottom: 30px;
+    }
 `
 const ContainerBotoes = styled.div`
     display: flex;

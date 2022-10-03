@@ -14,6 +14,8 @@ export default function Flashcards(props) {
         <>
 
             <Flashcard
+                pergunta= {'Qual a melhor série do mundo?'}
+                resposta= {'Game of Thrones'}
                 numeroPergunta={numeroPergunta[0]}
                 transformarCarta={transformarCarta}
                 setTransformarCarta={setTransformarCarta}
@@ -30,6 +32,8 @@ export default function Flashcards(props) {
                 cor = {cor}
             />
             <Flashcard
+                pergunta= {'Qual o 9 do hexa?'}
+                resposta= {'Pedro'}
                 numeroPergunta={numeroPergunta[1]}
                 transformarCarta={transformarCarta}
                 setTransformarCarta={setTransformarCarta}
@@ -46,6 +50,8 @@ export default function Flashcards(props) {
                 cor = {cor}
             />
             <Flashcard
+                pergunta= {'Qual a protagonista de House of the dragon?'}
+                resposta= {'Rhaenyra'}
                 numeroPergunta={numeroPergunta[2]}
                 transformarCarta={transformarCarta}
                 setTransformarCarta={setTransformarCarta}
@@ -62,6 +68,8 @@ export default function Flashcards(props) {
                 cor = {cor}
             />
             <Flashcard
+                pergunta= {'Qual a melhor série da Netflix?'}
+                resposta= {'Dark'}
                 numeroPergunta={numeroPergunta[3]}
                 transformarCarta={transformarCarta}
                 setTransformarCarta={setTransformarCarta}
