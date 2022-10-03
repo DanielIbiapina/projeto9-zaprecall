@@ -83,7 +83,7 @@ export default function App() {
                     <Botoes data-identifier="almost-forgot-btn" cor={amarelo} onClick={() => quase(respostaCarta[0])}> Quase não lembrei</Botoes>
                     <Botoes data-identifier="zap-btn" cor={verde} onClick={() => zap(respostaCarta[0])} > Zap!</Botoes>
                 </ContainerBotoes>
-                <p>{contador.length}/4 CONCLUIDOS</p>
+                <p>{contador.length}/8 CONCLUIDOS</p>
             </Footer>
         </Conteudo>
     );
