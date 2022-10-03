@@ -85,6 +85,78 @@ export default function Flashcards(props) {
                 setTracado={setTracado}
                 cor = {cor}
             />
+            <Flashcard
+                pergunta= {'Qual a melhor série do mundo?'}
+                resposta= {'Game of Thrones'}
+                numeroPergunta={numeroPergunta[4]}
+                transformarCarta={transformarCarta}
+                setTransformarCarta={setTransformarCarta}
+                respostaCarta={respostaCarta}
+                setRespostaCarta={setRespostaCarta}
+                corVerde={corVerde}
+                setCorVerde={setCorVerde}
+                corAmarelo={corAmarelo}
+                setCorAmarelo={setCorAmarelo}
+                corVermelho={corVermelho}
+                setCorVermelho={setCorVermelho}
+                tracado={tracado}
+                setTracado={setTracado}
+                cor = {cor}
+            />
+            <Flashcard
+                pergunta= {'Qual a melhor série do mundo?'}
+                resposta= {'Game of Thrones'}
+                numeroPergunta={numeroPergunta[5]}
+                transformarCarta={transformarCarta}
+                setTransformarCarta={setTransformarCarta}
+                respostaCarta={respostaCarta}
+                setRespostaCarta={setRespostaCarta}
+                corVerde={corVerde}
+                setCorVerde={setCorVerde}
+                corAmarelo={corAmarelo}
+                setCorAmarelo={setCorAmarelo}
+                corVermelho={corVermelho}
+                setCorVermelho={setCorVermelho}
+                tracado={tracado}
+                setTracado={setTracado}
+                cor = {cor}
+            />
+            <Flashcard
+                pergunta= {'Qual a melhor série do mundo?'}
+                resposta= {'Game of Thrones'}
+                numeroPergunta={numeroPergunta[6]}
+                transformarCarta={transformarCarta}
+                setTransformarCarta={setTransformarCarta}
+                respostaCarta={respostaCarta}
+                setRespostaCarta={setRespostaCarta}
+                corVerde={corVerde}
+                setCorVerde={setCorVerde}
+                corAmarelo={corAmarelo}
+                setCorAmarelo={setCorAmarelo}
+                corVermelho={corVermelho}
+                setCorVermelho={setCorVermelho}
+                tracado={tracado}
+                setTracado={setTracado}
+                cor = {cor}
+            />
+            <Flashcard
+                pergunta= {'Qual a melhor série do mundo?'}
+                resposta= {'Game of Thrones'}
+                numeroPergunta={numeroPergunta[7]}
+                transformarCarta={transformarCarta}
+                setTransformarCarta={setTransformarCarta}
+                respostaCarta={respostaCarta}
+                setRespostaCarta={setRespostaCarta}
+                corVerde={corVerde}
+                setCorVerde={setCorVerde}
+                corAmarelo={corAmarelo}
+                setCorAmarelo={setCorAmarelo}
+                corVermelho={corVermelho}
+                setCorVermelho={setCorVermelho}
+                tracado={tracado}
+                setTracado={setTracado}
+                cor = {cor}
+            />
 
         </>
     );
